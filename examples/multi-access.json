@@ -1,0 +1,130 @@
+{
+  "layout": {
+    "type": "access",
+    "center": "LSW1",
+    "sides": {
+      "left": [
+        "PC1",
+        "PC2",
+        "PC3"
+      ],
+      "right": [
+        "PC4",
+        "PC5",
+        "PC6",
+        "PC7"
+      ],
+      "bottom": [
+        "PC8",
+        "PC9"
+      ]
+    }
+  },
+  "devices": [
+    {
+      "id": "LSW1",
+      "kind": "core-switch"
+    },
+    {
+      "id": "PC1",
+      "kind": "pc",
+      "ip": "192.168.10.11/24"
+    },
+    {
+      "id": "PC2",
+      "kind": "pc",
+      "ip": "192.168.10.12/24"
+    },
+    {
+      "id": "PC3",
+      "kind": "pc",
+      "ip": "192.168.10.13/24"
+    },
+    {
+      "id": "PC4",
+      "kind": "pc",
+      "ip": "192.168.10.14/24"
+    },
+    {
+      "id": "PC5",
+      "kind": "pc",
+      "ip": "192.168.10.15/24"
+    },
+    {
+      "id": "PC6",
+      "kind": "pc",
+      "ip": "192.168.10.16/24"
+    },
+    {
+      "id": "PC7",
+      "kind": "pc",
+      "ip": "192.168.10.17/24"
+    },
+    {
+      "id": "PC8",
+      "kind": "pc",
+      "ip": "192.168.10.18/24"
+    },
+    {
+      "id": "PC9",
+      "kind": "pc",
+      "ip": "192.168.10.19/24"
+    }
+  ],
+  "links": [
+    {
+      "from": "PC1",
+      "to": "LSW1",
+      "from_interface": "E0/0/1",
+      "to_interface": "GE0/0/1"
+    },
+    {
+      "from": "PC2",
+      "to": "LSW1",
+      "from_interface": "E0/0/1",
+      "to_interface": "GE0/0/2"
+    },
+    {
+      "from": "PC3",
+      "to": "LSW1",
+      "from_interface": "E0/0/1",
+      "to_interface": "GE0/0/3"
+    },
+    {
+      "from": "LSW1",
+      "to": "PC4",
+      "from_interface": "GE0/0/4",
+      "to_interface": "E0/0/1"
+    },
+    {
+      "from": "LSW1",
+      "to": "PC5",
+      "from_interface": "GE0/0/5",
+      "to_interface": "E0/0/1"
+    },
+    {
+      "from": "LSW1",
+      "to": "PC6",
+      "from_interface": "GE0/0/6",
+      "to_interface": "E0/0/1"
+    },
+    {
+      "from": "LSW1",
+      "to": "PC7",
+      "from_interface": "GE0/0/7",
+      "to_interface": "E0/0/1"
+    },
+    {
+      "from": "LSW1",
+      "to": "PC8",
+      "from_interface": "GE0/0/8",
+      "to_interface": "E0/0/1"
+    },
+    {
+      "from": "LSW1",
+      "to": "PC9",
+      "from_interface": "GE0/0/9",
+      "to_interface": "E0/0/1"
+    }
+  ]
+}

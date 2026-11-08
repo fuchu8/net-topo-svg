@@ -1,0 +1,42 @@
+{
+  "layout": {
+    "type": "aggregation",
+    "bundle": "Eth-Trunk1"
+  },
+  "devices": [
+    {
+      "id": "LSW1",
+      "kind": "core-switch"
+    },
+    {
+      "id": "LSW2",
+      "kind": "core-switch"
+    }
+  ],
+  "links": [
+    {
+      "from": "LSW1",
+      "to": "LSW2",
+      "from_interface": "GE0/0/1",
+      "to_interface": "GE0/0/1"
+    },
+    {
+      "from": "LSW1",
+      "to": "LSW2",
+      "from_interface": "GE0/0/2",
+      "to_interface": "GE0/0/2"
+    },
+    {
+      "from": "LSW1",
+      "to": "LSW2",
+      "from_interface": "GE0/0/3",
+      "to_interface": "GE0/0/3"
+    },
+    {
+      "from": "LSW1",
+      "to": "LSW2",
+      "from_interface": "GE0/0/4",
+      "to_interface": "GE0/0/4"
+    }
+  ]
+}

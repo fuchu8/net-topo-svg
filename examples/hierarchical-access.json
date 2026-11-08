@@ -1,0 +1,98 @@
+{
+  "layout": {
+    "type": "hierarchical",
+    "root": "R1",
+    "children": {
+      "R1": [
+        "LSW1",
+        "LSW2"
+      ],
+      "LSW1": [
+        "PC1",
+        "PC2"
+      ],
+      "LSW2": [
+        "PC3",
+        "PC4"
+      ]
+    }
+  },
+  "devices": [
+    {
+      "id": "R1",
+      "kind": "router"
+    },
+    {
+      "id": "LSW1",
+      "kind": "switch-l2"
+    },
+    {
+      "id": "LSW2",
+      "kind": "switch-l2"
+    },
+    {
+      "id": "PC1",
+      "kind": "pc",
+      "ip": "192.168.1.1/24",
+      "gateway": "192.168.1.254"
+    },
+    {
+      "id": "PC2",
+      "kind": "pc",
+      "ip": "192.168.1.2/24",
+      "gateway": "192.168.1.254"
+    },
+    {
+      "id": "PC3",
+      "kind": "pc",
+      "ip": "192.168.2.1/24",
+      "gateway": "192.168.2.254"
+    },
+    {
+      "id": "PC4",
+      "kind": "pc",
+      "ip": "192.168.2.2/24",
+      "gateway": "192.168.2.254"
+    }
+  ],
+  "links": [
+    {
+      "from": "R1",
+      "to": "LSW1",
+      "from_interface": "GE0/0/0",
+      "to_interface": "GE0/0/3",
+      "from_ip": "192.168.1.254/24"
+    },
+    {
+      "from": "R1",
+      "to": "LSW2",
+      "from_interface": "GE0/0/1",
+      "to_interface": "GE0/0/1",
+      "from_ip": "192.168.2.254/24"
+    },
+    {
+      "from": "LSW1",
+      "to": "PC1",
+      "from_interface": "GE0/0/1",
+      "to_interface": "E0/0/1"
+    },
+    {
+      "from": "LSW1",
+      "to": "PC2",
+      "from_interface": "GE0/0/2",
+      "to_interface": "E0/0/1"
+    },
+    {
+      "from": "LSW2",
+      "to": "PC3",
+      "from_interface": "GE0/0/2",
+      "to_interface": "E0/0/1"
+    },
+    {
+      "from": "LSW2",
+      "to": "PC4",
+      "from_interface": "GE0/0/3",
+      "to_interface": "E0/0/1"
+    }
+  ]
+}

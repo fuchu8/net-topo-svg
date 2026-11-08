@@ -1,0 +1,4 @@
+interface:
+  display_name: "网络教学拓扑图"
+  short_description: "2.5D 与精修圆角双风格，各 32 类图标，共用居中布局和接口标注避让"
+  default_prompt: "使用 $net-topo-svg，按用户指定选择 2.5D 或圆角风格，根据实验的真实设备、连接、接口和地址修改 JSON 案例，生成并检查自包含 SVG 拓扑。"

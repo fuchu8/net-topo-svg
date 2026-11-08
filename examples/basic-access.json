@@ -1,0 +1,83 @@
+{
+  "layout": {
+    "type": "backbone",
+    "main": [
+      "FW1",
+      "AR1",
+      "LSW1",
+      "AP1",
+      "Phone1"
+    ],
+    "bottom": {
+      "LSW1": [
+        "PC1"
+      ]
+    }
+  },
+  "devices": [
+    {
+      "id": "FW1",
+      "kind": "firewall"
+    },
+    {
+      "id": "AR1",
+      "kind": "router"
+    },
+    {
+      "id": "LSW1",
+      "kind": "switch-l2"
+    },
+    {
+      "id": "AP1",
+      "kind": "ap"
+    },
+    {
+      "id": "Phone1",
+      "kind": "smartphone",
+      "ip": "192.168.10.20/24"
+    },
+    {
+      "id": "PC1",
+      "kind": "pc",
+      "ip": "192.168.10.10/24",
+      "gateway": "192.168.10.1"
+    }
+  ],
+  "links": [
+    {
+      "from": "FW1",
+      "to": "AR1",
+      "from_interface": "GE0/0/1",
+      "to_interface": "GE0/0/1",
+      "from_ip": "172.16.0.1/30",
+      "to_ip": "172.16.0.2/30"
+    },
+    {
+      "from": "AR1",
+      "to": "LSW1",
+      "from_interface": "GE0/0/0",
+      "to_interface": "GE0/0/24",
+      "from_ip": "192.168.10.1/24"
+    },
+    {
+      "from": "LSW1",
+      "to": "AP1",
+      "from_interface": "GE0/0/1",
+      "to_interface": "GE0/0/1",
+      "note": "VLAN 10"
+    },
+    {
+      "from": "AP1",
+      "to": "Phone1",
+      "from_interface": "",
+      "to_interface": "无线网卡",
+      "medium": "wireless"
+    },
+    {
+      "from": "LSW1",
+      "to": "PC1",
+      "from_interface": "GE0/0/2",
+      "to_interface": "E0/0/1"
+    }
+  ]
+}
