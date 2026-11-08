@@ -12,9 +12,17 @@
 | --- | --- |
 | ![2.5D 分层拓扑](examples/hierarchical-access.png) | ![圆角分层拓扑](examples/hierarchical-access-rounded.png) |
 
-| 链路聚合 | 多终端接入 |
-| --- | --- |
-| ![链路聚合](examples/link-aggregation.png) | ![多终端接入](examples/multi-access.png) |
+### 基础路由与终端接入
+
+![基础路由与终端接入拓扑](examples/showcase/routed-access.png)
+
+### 静态路由与路由汇总
+
+![静态路由与路由汇总拓扑](examples/showcase/static-routing-summary.png)
+
+### 园区综合网络
+
+![园区综合网络拓扑](examples/showcase/campus-network.png)
 
 ## 功能
 

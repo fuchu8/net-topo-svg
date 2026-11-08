@@ -12,9 +12,17 @@ Choose between **2.5D device illustrations** and **polished rounded icons**, wit
 | --- | --- |
 | ![2.5D hierarchical topology](examples/hierarchical-access.png) | ![Rounded hierarchical topology](examples/hierarchical-access-rounded.png) |
 
-| Link aggregation | Multiple endpoints |
-| --- | --- |
-| ![Link aggregation](examples/link-aggregation.png) | ![Multiple endpoints](examples/multi-access.png) |
+### Basic routing and endpoint access
+
+![Basic routing and endpoint access topology](examples/showcase/routed-access.png)
+
+### Static routing and route summarization
+
+![Static routing and route summarization topology](examples/showcase/static-routing-summary.png)
+
+### Campus network
+
+![Campus network topology](examples/showcase/campus-network.png)
 
 ## Features
 
